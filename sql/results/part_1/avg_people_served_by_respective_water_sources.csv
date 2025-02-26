@@ -1,0 +1,6 @@
+type_of_water_source,source_count,total_people_served,avg_people_served
+shared_tap,5767,11945272,2071
+river,3379,2362544,699
+tap_in_home_broken,5856,3799720,649
+tap_in_home,7265,4678880,644
+well,17383,4841724,279
