@@ -1,0 +1,70 @@
+Total_Population_With_Access = 
+    CALCULATE(
+        SUM('water_source'[number_of_people_served]),
+        FILTER(
+            ALL(water_source),
+            OR(
+                'water_source'[type_of_water_source] = "tap_in_home",
+                AND('water_source'[type_of_water_source] = "well", 
+                    RELATED(well_pollution[results]) = "Clean"),
+                AND('water_source'[type_of_water_source] = "shared_tap", 
+                    'water_source'[Average_queue_time] < 30)
+            )
+        )
+    )
+
+
+
+ budgeted_improvement_cost =
+ IF(
+ CONTAINSSTRING(
+ 'project_progress'[town],
+ "Rural*"
+ ),
+ RELATED('infrastructure_cost'[Rural_adjusted_cost]), RELATED('infrastructure_cost'[unit_cost_USD])
+ )
+
+
+ The total number of improvements is:
+ total_improvements =
+ CALCULATE(
+ COUNTROWS('project_progress'),
+ ALLEXCEPT('project_progress','project_progress'[town]))
+
+ The total_population is:
+ total_population =
+ CALCULATE(
+ <BLANK>('water_source'[<BLANK>]), −− Sum of people
+ ALLEXCEPT(
+ 'project_progress',
+ 'project_progress'[<BLANK>]
+ ) −−Only keep [town] as a filter.
+ )
+
+
+
+The population_with_basic_access is:
+ population_with_basic_access =
+ 	CALCULATE( −− Calculate with some conditions
+ 		SUM('water_source'[number_of_people_served]),−− Population when....
+ 		FILTER(
+ 			ALL(water_source),
+ 			OR(−− Nested or to have well, OR tap_in_home OR shared tap
+ 				OR(
+					 AND( −− When it is a well, it must be clean too
+ 						'water_source'[type_of_water_source] = "well",
+ 						RELATED(well_pollution[results]) = "Clean"
+ 					),
+ 					'water_source'[type_of_water_source] = "tap_in_home"
+				 ),
+				 AND( −− When it is a shared tap, it must have a short queue time
+ 					'water_source'[type_of_water_source] = "shared_tap",
+ 					'water_source'[Average_queue_time] < 30
+ 				)
+ 			)
+ 		)
+ 	)
+
+
+
+
