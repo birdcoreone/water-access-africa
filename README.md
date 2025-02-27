@@ -54,6 +54,8 @@ water-access-africa/
 │
 ├── README.md                       # General Project Documentation (this file)
 
+---
+
 ## ✨ Key Features
 - Comprehensive end-to-end data pipeline, from raw data to actionable insights.
 - SQL scripts for cleaning, joining, and analyzing water access data.
@@ -76,5 +78,13 @@ water-access-africa/
 
 ---
 
+## 👤 Author
+**Teddy Boamah**  
+Certified Data Scientist | Data Analyst  
+BTech AI, Kumasi Technical University  
+
+🔗 [Connect with me on LinkedIn](https://www.linkedin.com/in/teddyboamah/)  
+💻 [Visit My GitHub Portfolio](https://github.com/birdcoreone)  
+📧 Contact: [teddyboamah101@gmail.com]
 
 
