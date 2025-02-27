@@ -33,7 +33,7 @@ This repository is divided into multiple phases, representing the full lifecycle
 
 ## 🗂️ Repository Structure
 
-```text
+
 water-access-africa/
 │
 ├── sql/                          # SQL Phase - Data Prep & Analysis
