@@ -53,7 +53,7 @@ water-access-africa/
 │   ├── README.md                   # Documentation for Python phase (To Be Added)
 │
 ├── README.md                       # General Project Documentation (this file)
-
+```text
 ---
 
 ## ✨ Key Features
