@@ -53,8 +53,8 @@ water-access-africa/
 │   ├── README.md                   # Documentation for Python phase (To Be Added)
 │
 ├── README.md                       # General Project Documentation (this file)
-```text
----
+
+```
 
 ## ✨ Key Features
 - Comprehensive end-to-end data pipeline, from raw data to actionable insights.
