@@ -76,13 +76,5 @@ water-access-africa/
 
 ---
 
-## 👤 Author
-**Teddy Boamah**  
-Certified Data Scientist | Data Analyst  
-BTech AI, Kumasi Technical University  
-
-🔗 [Connect with me on LinkedIn](https://www.linkedin.com/in/teddyboamah/)  
-💻 [Visit My GitHub Portfolio](https://github.com/birdcoreone)  
-📧 Contact: [teddyboamah101@gmail.com]
 
 
