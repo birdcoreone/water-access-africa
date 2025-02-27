@@ -33,7 +33,7 @@ This repository is divided into multiple phases, representing the full lifecycle
 
 ## 🗂️ Repository Structure
 
-
+```text
 water-access-africa/
 │
 ├── sql/                          # SQL Phase - Data Prep & Analysis
@@ -73,6 +73,8 @@ water-access-africa/
 - **Power BI** - Data visualization and dashboard creation
 - **DAX** - Custom calculations and measures
 - **Python (planned)** - Advanced data analysis and predictive modeling
+
+---
 
 ## 👤 Author
 **Teddy Boamah**  
